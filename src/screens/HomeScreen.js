@@ -11,7 +11,7 @@ class HomeScreen extends React.Component {
     super(props);
     this.state = {
       modalVisible: false,
-      taxationAmount: 0,
+      taxationAmount: 10,
     };
     this.Paytm = this.Paytm.bind(this);
     this.Paypal = this.Paypal.bind(this);
@@ -24,7 +24,8 @@ class HomeScreen extends React.Component {
     var taxationAmount = this.state.taxationAmount;
     var mobile = `7809597596`;
     var email = `rpradhan909@gmail.com`;
-    var checkSum = ``;
+    var checkSum =
+      '3uAz2revD5wNWn9liTXhPfh/N5J76/JO+pJG6EchcgnddyGx1MmvdTBy+ggLciLE2R4Nk3WKPuXNC6+kAOEol7LcBncv/SSxmCrdzV62Pec=';
     // var mercUnqRef = ``;
     this.setState({modalVisible: false});
     this.props.navigation.navigate('Paytm', {
@@ -40,22 +41,21 @@ class HomeScreen extends React.Component {
 
   Paypal = () => {
     console.log('Paypal');
-    var orderId = new Date().getTime() / 1000;
-    var customerId = `${'rpradhan909@gmail.com'}_${'team'}`;
-    var taxationAmount = this.state.taxationAmount;
-    var mobile = `7809597596`;
-    var email = `rpradhan909@gmail.com`;
-    var checkSum = ``;
-    var mercUnqRef = ``;
+    var nonce =
+      '2020-04-06T07:24:29Z1xeKTQjIQMC0ijbUu0G-JsMnqUj5nT0QT6Wyd06oW40';
+    var payerId = 'APP-80W284485P519543T';
+    var email = 'rr.pradhan00@gmail.com';
+    var firstName = 'Rashmiranjan';
+    var lastName = 'Pradhan';
+    var phone = '2021485647';
     this.setState({modalVisible: false});
     this.props.navigation.navigate('Paypal', {
-      taxationAmount,
-      customerId,
-      orderId,
-      mobile,
+      nonce,
+      payerId,
       email,
-      checkSum,
-      mercUnqRef,
+      firstName,
+      lastName,
+      phone,
     });
   };
 

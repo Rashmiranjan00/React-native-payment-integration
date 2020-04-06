@@ -60,7 +60,7 @@ class PaytmScreen extends React.Component {
       EMAIL: email, // String
       MOBILE_NO: mobile, // String
       CUST_ID: customerId, // String
-      CHECKSUMHASH: "Sq33bDQTTGilYFj+wqnM+ts2Vmce6QIUricwZBKgCb4CFTWrqXL6yqie6qnM4OB4KmzzmG1cnqSruQ4LWPPMxpO3ygoh6LA8jq7hWrL1ErQ=", //From your server using PayTM Checksum Utility
+      CHECKSUMHASH: checkSum, //From your server using PayTM Checksum Utility
       CALLBACK_URL: callbackUrl,
       //   MERC_UNQ_REF: mercUnqRef, // optional
     };
