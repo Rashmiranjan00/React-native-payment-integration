@@ -53,7 +53,7 @@ class PaypalScreen extends React.Component {
             {
                 headers: {
                     'Content-Type': 'application/json',
-                    'Authorization': `Bearer A21AAHdCHR4n-48O5onwsv3FmiS9tQOUjpT9D_VL6iPj5m9CSBHPyR-R4xCGZafCzsAjfFl6qNuVI25hLEucXJnKDnLL4F6Zw`
+                    'Authorization': `Bearer A21AAGgSduplsWgBfYFiiFbWLsD6_Y-xZNbf10C6EZdLhRLKW7Nqe7cg6noAYKKj4_-AyaknkvcvqJfVVZHCoBga3YYJ0YKew`
                 }
             }
         )

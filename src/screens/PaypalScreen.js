@@ -45,28 +45,26 @@ class PaypalScreen extends React.Component {
       },
     };
 
-    const url = 'https://api.sandbox.paypal.com/v1/oauth2/token';
-
     const auth = {
       username:
-        'AWkpSxuUorLMnb6maCLsslwBuAiz6qs-rUB1_qw6mxHNrrEgV2k8lGPJ_FIKv7vtpxUx8K5yA99np24Q',
+        'ASkKxc6yuE3lyg_TTku8VbefGlN3T4Mb6q0qO9KVnbPplepRXB2S8HaE1JvYClQRlF3KKWmP4A4omxZF',
       password:
-        'EFeaR03I0azDvk2sGctztFtPfg_JeXUOWU015fQDMP777iuje0dRiHsqAZXrkGJ9SucEPC4nPMsTrqQY',
+        'EEfZFZNnM0CnNG4irwTPhQanjmUt0D4R2iePrLerQeunJiz71AIQ3mxiF-jzLtfQ2DM4Cn56w_J6TXBu',
     };
 
     axios
       .post(
-        url,
+        'https://api.sandbox.paypal.com/v1/oauth2/token',
         {grant_type: 'client_credentials'},
         {
           headers: {
             'content-type': 'application/x-www-form-urlencoded',
-            'Access-Control-Allow-Credentials': true,
-            // 'Authorization': 'Bearer A21AAESzQ1mpY6QhtZeHCy81k_RqXEsAUn_5oYjb1L5tTpmTbj5ulTz4eL4qgHv3KNLGKCh_hYew24GFM33xgJXGwqWeMdJVA'
+            // 'Access-Control-Allow-Credentials': true,
+            'Authorization': 'Bearer A21AAHZfinavymkv5h6fBI74CzCypR29qMwHimUoIiTAAD__SJZl9Ny7we9lWQRte3eeoW18Yb81nq6TALPOSkooVmYn5uyiw'
 
           },
-          auth: auth,
-          method: 'post',
+          // auth: auth,
+          // method: 'post',
         },
       )
       .then((response) => {
