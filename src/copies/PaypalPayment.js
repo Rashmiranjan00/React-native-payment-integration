@@ -46,9 +46,9 @@ class PaypalScreen extends React.Component {
 
     const auth = {
       username:
-        'ASkKxc6yuE3lyg_TTku8VbefGlN3T4Mb6q0qO9KVnbPplepRXB2S8HaE1JvYClQRlF3KKWmP4A4omxZF',
+        'AfrTBDmH4sRe6mjeddTs2ZJKyIOghZA_ljdJFBCefr5XcbfmmabURcB8OCNykzRCr-hQgPhg6FGHbNeS',
       password:
-        'EEfZFZNnM0CnNG4irwTPhQanjmUt0D4R2iePrLerQeunJiz71AIQ3mxiF-jzLtfQ2DM4Cn56w_J6TXBu',
+        'EF2OqiMu1Y30p-YWfq3nvWUVFKkEBuf82MbpbCMf8tCj0JZSgkgbIVF6jZzO2kO6x9npEHdf24ilWXQG',
     };
 
     axios
@@ -58,11 +58,10 @@ class PaypalScreen extends React.Component {
         {
           headers: {
             'content-type': 'application/x-www-form-urlencoded',
-            // 'Access-Control-Allow-Credentials': true,
-            Authorization:
-              'Bearer A21AAHZfinavymkv5h6fBI74CzCypR29qMwHimUoIiTAAD__SJZl9Ny7we9lWQRte3eeoW18Yb81nq6TALPOSkooVmYn5uyiw',
+            'Access-Control-Allow-Credentials': true,
+            // Authorization: 'Bearer A21AAHZfinavymkv5h6fBI74CzCypR29qMwHimUoIiTAAD__SJZl9Ny7we9lWQRte3eeoW18Yb81nq6TALPOSkooVmYn5uyiw',
           },
-          // auth: auth,
+          auth: auth,
           // method: 'post',
         },
       )

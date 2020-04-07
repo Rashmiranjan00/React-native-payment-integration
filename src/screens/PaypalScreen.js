@@ -1,9 +1,7 @@
 import React from 'react';
 
-import {View, Text, Modal, TouchableOpacity, ActivityIndicator} from 'react-native';
-import { WebView } from 'react-native-webview';
-// import axios from 'axios';
-// const qs = require('qs');
+import {View, Text, Modal, TouchableOpacity} from 'react-native';
+import {WebView} from 'react-native-webview';
 
 class PaypalScreen extends React.Component {
   constructor(props) {
@@ -48,6 +46,3 @@ class PaypalScreen extends React.Component {
 }
 
 export default PaypalScreen;
-
-// x-www-form-urlencoded
-// Bearer A21AAHdCHR4n-48O5onwsv3FmiS9tQOUjpT9D_VL6iPj5m9CSBHPyR-R4xCGZafCzsAjfFl6qNuVI25hLEucXJnKDnLL4F6Zw
