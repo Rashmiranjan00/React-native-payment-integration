@@ -14,7 +14,7 @@
     "axios": "^0.19.2",
     "qs": "^6.9.3",
     "react": "16.11.0",
-    "react-native": "0.62.0",
+    "react-native": "0.62.3",
     "react-native-gesture-handler": "^1.6.1",
     "react-native-paypal": "^2.1.0",
     "react-native-paytm": "^1.0.9",
